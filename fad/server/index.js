@@ -59,10 +59,10 @@ let transporter = nodemailer.createTransport({
   });
  });
 
-app.use('/apply',Apply);
-app.use('/auth',Auth);
-app.use('/fetch',Fetch);
-app.use('/mail',Mail);
+app.use('/portal/apply',Apply);
+app.use('/portal/auth',Auth);
+app.use('/portal/fetch',Fetch);
+app.use('/portal/mail',Mail);
 
 const CONNECTION_URL = `mongodb+srv://${user}:${pswrd}@cluster0.p6xod.mongodb.net/Upwork?retryWrites=true&w=majority`;
 const PORT = process.env.PORT|| 5000;
